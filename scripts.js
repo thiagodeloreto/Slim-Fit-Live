@@ -19,3 +19,12 @@ document.addEventListener("DOMContentLoaded", function() {
   
     setInterval(nextSlide, 3000);
   });
+
+  window.addEventListener('scroll', function() {
+    var navbar = document.querySelector('.navigation');
+    if (window.scrollY > 0) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
