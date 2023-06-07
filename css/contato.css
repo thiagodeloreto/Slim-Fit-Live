@@ -1,0 +1,26 @@
+.contato{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.contato_secao h2{
+    margin-bottom: 70px;
+}
+
+.contato p{
+    color: #1920D0;
+    width: 400px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.contato img{
+    width: 150px;
+    height: 150px;
+}
+
+.contato span {
+    font-weight: bold;
+}

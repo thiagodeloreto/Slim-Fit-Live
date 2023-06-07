@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slim Fit Life</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/imc.css">
+</head>
+
+<body>
+    <div class="carousel">
+        <div class="slide" style="background-image: url('/images/home.jpg');"></div>
+        <div class="slide" style="background-image: url('/images/home2.jpg');"></div>
+        <div class="slide" style="background-image: url('/images/home3.jpg');"></div>
+        <div class="slide" style="background-image: url('/images/home4.jpg');"></div>
+        <div class="slide" style="background-image: url('/images/home5.jpg');"></div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="navigation">
+                <div class="brand">
+                    <a href="index.html">
+                        <img src="/images/logo.png" alt="Logo Slim Fit Life">
+                        <h1>Slim Fit Life</h1>
+                    </a>
+                </div>
+
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/imc.html">IMC</a></li>
+                    <li><a href="/quem_somos.html">Quem Somos</a></li>
+                    <li><a href="/contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Calculadora de IMC</h2>
+            <div class="calculadora_imc">
+                <form action="">
+                    <label for="">Altura (ex.: 170 cm)</label>
+                    <input type="text" class="altura_input" placeholder="Digite a sua altura">
+                    <label for="">Peso (ex.: 69,2 Kg)</label>
+                    <input type="text" class="peso_input" placeholder="Digite o seu peso">
+                    <div class="botoes">
+                        <button type="button" onclick="calcularIMC()">Calcular</button>
+                        <button type="reset">Resetar</button>
+                    </div>
+                </form>
+                <div class="resposta_calculadora">
+                    <h2>Seu resultado:</h2>
+                    <p class="resultado"></p>
+                </div>
+            </div>
+        </section>
+          
+    </main>
+
+    <footer>
+        <h2>Siga as nossas redes sociais</h2>
+        <div class="redes_sociais">
+            <a href=""><img src="images/twitter.png" alt=""></a>
+            <a href=""><img src="images/instagram.png" alt=""></a>
+            <a href=""><img src="images/facebook.png" alt=""></a>
+            <a href=""><img src="images/youtube.png" alt=""></a>
+        </div>
+        <p>Slim Fit Life | Todos os direitos reservados</p>
+
+    </footer>
+    
+    <script src="/scripts.js"></script>
+</body>
+
+</html>
